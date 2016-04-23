@@ -1,3 +1,5 @@
+spool c:\Users\cpina\Desktop\addLibraryData.txt
+
 INSERT INTO Category VALUES ('00001','Science Fiction');
 INSERT INTO Category VALUES ('00002','Biography');
 INSERT INTO Category VALUES ('00003','History');
@@ -33,9 +35,11 @@ INSERT INTO Book VALUES ('9999999998', 'The Last Mile', '22228', '00004');
 INSERT INTO Book VALUES ('9999999999', 'Daring Greatly', '22229', '00005');
 INSERT INTO Book VALUES ('9999999990', 'Strengths Finder', '22220', '00005');
 
-INSERT INTO Loans VALUES ('33330', TO_DATE('2016/05/03', 'yyyy/mm/dd'), '11111', '9999999991');
-INSERT INTO Loans VALUES ('33331', TO_DATE('2016/05/23', 'yyyy/mm/dd'), '11112', '9999999998');
-INSERT INTO Loans VALUES ('33332', TO_DATE('2015/01/23', 'yyyy/mm/dd'), '11112', '9999999999');
-INSERT INTO Loans VALUES ('33333', TO_DATE('2015/12/23', 'yyyy/mm/dd'), '11115', '9999999994');
-INSERT INTO Loans VALUES ('33334', TO_DATE('2016/05/13', 'yyyy/mm/dd'), '11114', '9999999992');
-INSERT INTO Loans VALUES ('33335', TO_DATE('2016/04/30', 'yyyy/mm/dd'), '11116', '9999999993');
+INSERT INTO Loans VALUES (TO_DATE('2016/04/03', 'yyyy/mm/dd'), TO_DATE('2016/05/03', 'yyyy/mm/dd'), '11111', '9999999991');
+INSERT INTO Loans VALUES (TO_DATE('2016/04/23', 'yyyy/mm/dd'), TO_DATE('2016/05/23', 'yyyy/mm/dd'), '11112', '9999999998');
+INSERT INTO Loans VALUES (TO_DATE('2015/01/03', 'yyyy/mm/dd'), TO_DATE('2015/01/23', 'yyyy/mm/dd'), '11112', '9999999999');
+INSERT INTO Loans VALUES (TO_DATE('2015/12/03', 'yyyy/mm/dd'), TO_DATE('2015/12/23', 'yyyy/mm/dd'), '11115', '9999999994');
+INSERT INTO Loans VALUES (TO_DATE('2016/04/13', 'yyyy/mm/dd'), TO_DATE('2016/05/13', 'yyyy/mm/dd'), '11114', '9999999992');
+INSERT INTO Loans VALUES (TO_DATE('2016/03/30', 'yyyy/mm/dd'), TO_DATE('2016/04/30', 'yyyy/mm/dd'), '11116', '9999999993');
+
+SPOOL OFF
